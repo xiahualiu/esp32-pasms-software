@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'espressif/idf:v5.2.1'
-            args '-e IDF_CCACHE_ENABLE=0 -e IDF_GIT_SAFE_DIR=\'*\''
+            args "-e IDF_CCACHE_ENABLE=0 -e IDF_GIT_SAFE_DIR='*'"
         }
     }
     stages {

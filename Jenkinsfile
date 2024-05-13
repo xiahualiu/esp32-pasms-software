@@ -5,9 +5,9 @@ pipeline {
     }
   }
 	stages {
-		stage('Tests') {
+		stage('Checkout') {
 			steps {
-				sh '/opt/esp/entrypoint.sh idf.py --version'
+				sh 'ls -al'
 			}
 		}
 	}

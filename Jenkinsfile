@@ -14,5 +14,10 @@ pipeline {
                 }
             }
         }
+        stage('Publish') {
+            steps {
+                echo 'Test Publish!'
+            }
+        }
     }
 }

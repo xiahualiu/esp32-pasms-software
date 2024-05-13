@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'espressif/idf:v5.2.1'
+            args '-e CCACHE_CONFIGPATH=/tmp/.ccache'
         }
     }
     stages {
